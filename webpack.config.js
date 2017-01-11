@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './frontend/entry.js',
+  entry: './frontend/entry.jsx',
   output: {
     path: 'build',
     publicPath: '/build/',
@@ -12,7 +12,7 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015']
+          presets: ['es2015', 'react']
         }
       }
     ]
